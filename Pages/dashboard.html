@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Dashboard</title>
+
+    <link rel="stylesheet" href="../Styles/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <h2>Facebook</h2>
+
+        </div>
+
+        <div class="nav-right">
+
+            <button onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- Cover Section -->
+
+    <section class="cover-section">
+
+        <div class="cover-photo"></div>
+
+        <div class="profile-section">
+
+            <img
+                src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                alt="Profile"
+                class="profile-pic">
+
+            <h2 id="userName">
+                User Name
+            </h2>
+
+            <p id="userEmail">
+                user@email.com
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Dashboard Cards -->
+
+    <section class="dashboard-content">
+
+        <div class="card">
+
+            <h3>Profile Status</h3>
+
+            <p>Active User ✅</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Account Type</h3>
+
+            <p>Facebook Member 👤</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Storage</h3>
+
+            <p>Local Storage Connected 💾</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Security</h3>
+
+            <p>Login Protected 🔒</p>
+
+        </div>
+
+    </section>
+
+</body>
+
+<script src="../Scripts/app.js"></script>
+
+</html>

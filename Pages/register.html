@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="../Styles/register.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header-section">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png"
+                alt="Meta Logo">
+
+            <h2>Get started on Facebook</h2>
+
+            <p>
+                Create an account to connect with friends,
+                family and communities of people who share
+                your interests.
+            </p>
+
+        </div>
+
+        <!-- Name -->
+
+        <div class="input-names">
+
+            <p>Name</p>
+
+            <div class="inputBox">
+
+                <div>
+                    <input
+                        type="text"
+                        id="firstName"
+                        placeholder="First name">
+                </div>
+
+                <div>
+                    <input
+                        type="text"
+                        id="lastName"
+                        placeholder="Surname">
+                </div>
+
+            </div>
+
+            <p id="name-para">
+                What's your name?
+            </p>
+
+        </div>
+
+        <!-- DOB -->
+
+        <div class="dob-section">
+
+            <h2>Date of birth</h2>
+
+            <div class="dropdown">
+
+                <select id="month">
+
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+
+                </select>
+
+                <select id="day">
+
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+
+                </select>
+
+                <select id="year">
+
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!-- Gender -->
+
+        <div class="gender">
+
+            <h2>Gender</h2>
+
+            <select id="gender">
+
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+
+            </select>
+
+        </div>
+
+        <!-- Email -->
+
+        <div class="email-address">
+
+            <h2>Mobile number or email address</h2>
+
+            <div class="inputBox">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Mobile number or email address">
+
+            </div>
+
+        </div>
+
+        <!-- Password -->
+
+        <div class="email-address">
+
+            <h2>Password</h2>
+
+            <div class="inputBox">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password">
+
+            </div>
+
+            <p id="name-para">
+                By clicking Sign Up you agree to our Terms,
+                Privacy Policy and Cookies Policy.
+            </p>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="btnBox">
+
+            <button
+                id="signup"
+                onclick="signup()">
+
+                Sign Up
+
+            </button>
+
+            <a href="login.html">
+
+                <button
+                    type="button"
+                    id="already-account">
+
+                    Already have an account
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="../Scripts/app.js"></script>
+
+</body>
+
+</html>

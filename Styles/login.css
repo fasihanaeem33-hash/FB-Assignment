@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(160, 218, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo top-left */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 70px; /* Adjust the size of the logo as needed */
+    height: 70px;   /* equal width & height zaroori */
+    border-radius: 100%; /* Circular shape */
+}
+
+/* Bottom-left text */
+.bottom-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.bottom-text p {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #333;
+    height: auto;
+}
+
+/* 3rd line */
+.third {
+    color: rgb(56, 56, 238) !important;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+    width: 90%;
+
+}
+
+.left-area {
+    width: 65%;
+}
+.right-area {
+    width: 35%;
+
+}
+
+.left-area {
+    display: flex;
+    justify-content: end;
+}
+
+.left-area > img {
+height: auto;
+width: 800px;
+}
+
+
+.right-area {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.loginForm {
+    width: 100%;
+}
+
+.email-address{
+    width: 80%;
+    margin-top: 15px;
+    
+ }
+
+ .inputBox > input{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 15px;
+ }
+
+
+ .btnBox {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ /*.btnBox > #login {
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0064E0;
+    color: white;
+    width: 80%;
+    margin-top: 15px;
+    
+ }*/
+
+.btnBox > a > #login {
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0064E0;
+    color: white; 
+    width: 80%;
+ }
+
+ .btnBox > a > #login:hover{
+    background-color: #D0D3D6;
+    transition: all 0.3s;
+ }
+
+ .btnBox > a > #already-account {
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    color: black; 
+    width: 80%;
+ }
+
+ .btnBox > a > #already-account:hover{
+    background-color: #D0D3D6;
+    transition: all 0.3s;
+ }
+
+ .btnBox > a > #already-account-2 {
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    color: #0064E0; 
+    border: 1px solid #0064E0;
+    width: 80%;
+ }
+
+ .btnBox > a > #already-account-2:hover{
+    background-color: #D0D3D6;
+    transition: all 0.3s;
+ }
+ 
+ footer {
+    position:fixed;  /* screen ke bottom pe fix */
+    bottom: 20px;
+    left: 1;
+    right: 1;
+    width: 100%;
+    text-align: center;   /* center alignment */
+    color: white;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-area {
+        display: none;
+    }
+
+    .right-area {
+        width: 100%;
+    }
+
+    .loginForm {
+        width: 90%;
+    }
+
+    .email-address {
+        width: 100%;
+    }
+
+    .btnBox > a > #login,
+    .btnBox > a > #already-account,
+    .btnBox > a > #already-account-2 {
+        width: 100%;
+    }
+
+    .bottom-text {
+        display: none;
+    }
+}
