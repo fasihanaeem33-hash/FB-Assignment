@@ -30,3 +30,5 @@ A simple front-end assignment demonstrating user signup/login flow with browser 
 
 - This app uses browser `localStorage` and is intended for demonstration purposes only.
 - Credentials and session state are stored locally and are not secure for production use.
+**Deploy Link**
+https://tubular-tulumba-3b0463.netlify.app/
